@@ -1,0 +1,637 @@
+ body{
+    background-color: #000;
+    color: #fff;
+    /* Third Colour: #49c5b6 */
+    font-family: 'League Spartan', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
+    overflow-x: hidden;
+}
+
+#Image_1{
+    width:100%;
+    height: 450px;
+    margin:13%auto;
+    display:flex;
+    
+  }
+ 
+  .tree{
+    fill-opacity:0;
+    stroke:rgb(18, 222, 198);
+    stroke-width:15px;
+    stroke-dashoffset:0;
+    stroke-dasharray:10000;
+    animation:tree 8s ease-in-out}
+  
+    @keyframes tree{
+      0%
+      {
+        stroke-dashoffset:10000;
+      }
+  
+      100%
+      {
+        stroke-dashoffset:0;
+      }
+  
+    }
+
+.sub-heading{
+    font-family: 'Roboto Slab', serif;
+    color: #66FcF1;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Intro */
+
+#intro{
+    padding: 0% 10%;
+    font-family: 'Roboto Slab', serif;
+}
+
+.intro-heading{
+    color: #66FcF1;
+    font-size: 5rem;
+    font-weight: 900;
+    padding-top: 10rem;
+}
+
+.nav-brand{
+    color: #66FcF1;
+    cursor:default;
+}
+
+.nav-brand:hover{
+    color: #66FcF1;
+    cursor:default;
+}
+
+.nav-link-color{
+    color: #66FcF1;
+}
+
+.nav-link-color:hover{
+    color: #fff;
+}
+:root {
+    --bg-color: #000;
+    --typewriterSpeed1: 1s;
+    --typewriterSpeed2: 4s;
+    --typewriterSpeed3: 2.67s;
+    --typewriterSpeed4: 6.33s ;
+    --typewriterSpeed5: 3.33s ;
+    --typewriterCharacters1: 3;
+    --typewriterCharacters2: 12;
+    --typewriterCharacters3: 8;
+    --typewriterCharacters4: 19;
+    --typewriterCharacters5: 10;
+  }
+ 
+.text-zone h1 {
+    font-size: 60px;
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+    font-weight: 900;
+  }
+  .name{
+    color: #08fdd8;
+  }
+  .text-zone h1::before,
+  .text-zone  h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .text-zone .hi::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed1)
+      steps(var(--typewriterCharacters1)) 1s forwards;
+  }
+  
+.text-zone .hi::after {
+    width: 0.125em;
+    background: #08fdd8;
+    animation: typewriter var(--typewriterSpeed1)
+        steps(var(--typewriterCharacters1)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters2)) infinite,
+      cursor-remove 100ms linear forwards 3s;
+    }
+    @keyframes cursor-remove{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+  
+.text-zone .text::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed2)
+      steps(var(--typewriterCharacters2)) 1s forwards;
+      animation-delay: 3s;
+  }
+  
+.text-zone .text::after {
+    width: 0.125em;
+    background: #08fdd8;
+    animation: typewriter var(--typewriterSpeed2)
+        steps(var(--typewriterCharacters2)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters2)) infinite;
+      animation-delay: 3s;
+      opacity: 0;
+  }
+#about-me .about {
+    font-size: 60px;
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+    opacity: 1;
+  }
+#about-me h1::before,
+#about-me h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+#about-me .about::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed3)
+      steps(var(--typewriterCharacters3)) 1s forwards;
+  }
+  
+#about-me .about::after {
+    width: 0.125em;
+    background: #08fdd8;
+    animation: typewriter var(--typewriterSpeed3)
+        steps(var(--typewriterCharacters3)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters3)) infinite;
+      opacity: 0;
+  }
+  #skills-and-projects .skill {
+    font-size: 60px;
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+    opacity: 1;
+  }
+#skills-and-projects h1::before,
+#skills-and-projects h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+#skills-and-projects .skill::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed4)
+      steps(var(--typewriterCharacters4)) 1s forwards;
+  }
+  
+#skills-and-projects .skill::after {
+    width: 0.125em;
+    background: #08fdd8;
+    animation: typewriter var(--typewriterSpeed4)
+        steps(var(--typewriterCharacters4)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters4)) infinite;
+      opacity: 0;
+  }
+  .skills{
+    opacity: 0;
+  }
+  .details{
+    opacity: 0;
+  }
+  .soc{
+    opacity: 0;
+  }
+  #contact-me .con {
+    font-size: 60px;
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+    opacity: 1;
+  }
+#contact-me h1::before,
+#contact-me h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+#contact-me .con::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed5)
+      steps(var(--typewriterCharacters5)) 1s forwards;
+  }
+  
+#contact-me .con::after {
+    width: 0.125em;
+    background: #08fdd8;
+    animation: typewriter var(--typewriterSpeed5)
+        steps(var(--typewriterCharacters5)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters5)) infinite;
+      opacity: 0;
+  }
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    to{
+        opacity: 1;
+        background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.profile-pic{
+    width: 20rem;
+    position: relative;
+    top: 15%;
+    border-radius: 50%;
+}
+
+.profile-pic-box{
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.profile-pic-vishnu{
+    transform: scale(0.8);
+}
+
+.caption{
+    font-size: 20px;
+    line-break: strict;
+    opacity: 0;
+    animation: appear 3s forwards;
+    animation-delay: 6.5s;
+    color: #66FcF1;
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* About Me */
+
+#about-me{
+    padding: 3% 10% 2% 10%;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Skills and Projects */
+
+#skills-and-projects{
+    padding: 5% 10%;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.skills-col{
+    padding-top: 5%;
+    padding-left: 0%;
+    font-size: 1.5rem;
+}
+#skills1{
+    transform: scale(0.75);
+    position: relative;
+    right: 23%;
+}
+#card-1{
+    animation: slide1 12s linear infinite;
+
+}
+@keyframes slide1{
+    0%{
+        opacity: 1;
+    }
+    5%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(30%);
+    }
+    28%{
+        opacity: 1;
+    }
+    30%{
+        transform: translateY(0);
+    }
+    33%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#card-3{
+    animation: slide3 12s linear infinite;
+}
+@keyframes slide3{
+        0%{
+            opacity: 0;
+        }
+        28%{
+            opacity: 0;
+        }
+        33%{
+            opacity: 1;
+        }
+        38%{
+            transform: translateY(0);
+        }
+        53%{
+            transform: translateY(30%);
+        }
+        61%{
+            opacity: 1;
+        }
+        63%{
+            transform: translateY(0);
+        }
+        66%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+
+
+}
+#card-2{
+    animation: slide2 12s linear infinite;
+}
+@keyframes slide2{
+    0%{
+        opacity: 0;
+    }
+    61%{
+        opacity: 0;
+    }
+    66%{
+        opacity: 1;
+    }
+    71%{
+        transform: translateY(0);
+    }
+    86%{
+        transform: translateY(30%);
+    }
+    94%{
+        opacity: 1;
+    }
+    96%{
+        transform: translateY(0);
+    }
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.skills-img{
+    height: 75%;
+    text-align: center;
+    padding: 5%;
+    padding-bottom: 0;
+}
+.skills-section {
+  width: 100%; 
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(50%);
+}
+
+.skills-section svg {
+  width: 40%;
+  margin: 0 auto;
+  background: transparent;
+  /* animation: rotate 18s ease-in-out 1s infinite alternate-reverse;
+  -webkit-animation: rotate 18s ease-in-out 1s infinite alternate-reverse;
+  -o-animation: rotate 18s ease-in-out 1s infinite alternate-reverse; */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+/* Contact Me */
+.btn-look{
+    color: #66FcF1;
+    padding: 5%;
+}
+
+
+.contact-me-text{
+    padding: 5% 10% 2% 10%;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.or{
+    text-align: center;
+    padding: 15% 0%;
+    font-size: 1.75rem;
+}
+
+.contact-form{
+    padding: 5%;
+    padding-top: 0%;
+}
+
+.input-box{
+    margin: 2%;
+}
+
+.input-box input,
+.input-box textarea{
+    position: relative;
+    width: 100%;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+.send-msg{  
+    text-align: center;
+}
+.btn1{
+    border: 1px solid #08fdd8;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 10px;
+    color: #08fdd8;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+.btn1:hover{
+    color: #000;
+}
+.btn1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #08fdd8;
+    z-index: -1;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.btn1:hover::before{
+    height: 180%;
+}
+.copyright{
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+    padding: 2%;
+}
+
+.text-zone{
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.abo{
+    opacity: 0;
+}
+#about-me h1,#skills-and-projects h1,#contact-me h1{
+    color: #08fdd8;
+    font-size: 4.3rem;
+    line-height: 85px;
+    letter-spacing: -10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+#contact-me h1{
+    position: relative;
+    left: 35%;
+    padding-bottom: 10px;
+}
+
+.sk{
+    opacity: 0;
+}
+
+.slideup{
+    opacity: 0;
+    animation: slideup 2s forwards;
+}
+@keyframes slideup{
+    0%{
+        opacity: 0;
+        translate: 0 40px;
+    }
+    100%{
+        opacity: 1;
+        translate: none;
+    }
+}
+
+.circle{
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: #08fdd8;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}
+@media (max-device-width:768px) {
+html{
+    overflow-x: hidden;
+}
+.text-zone h1{
+    font-size: 90px;
+}
+.caption{
+    font-size: 35px;
+}
+.profile-pic{
+    width: 20rem;
+    position: relative;
+    top: 15%;
+    border-radius: 50%;
+    left: 25%;
+}
+#contact-me h1{
+    left: 30%;
+}
+.details{
+    left: 25%;
+}
+/*.caption{
+    font-size: 1.5rem;
+}*/
+.soc{
+    position: relative;
+    left: 25%;
+}
+}
