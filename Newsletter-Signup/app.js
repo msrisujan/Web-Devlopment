@@ -11,8 +11,8 @@ app.get('/', (req, res) => {
 });
 
 mailchimp.setConfig({
-    apiKey: '8f2c0073d6c7f8044336f94aaa42a426-us8',
-    server: 'us8',
+    apiKey: 'Your API Key',
+    server: 'Your Server',
 });
 
 app.post('/', (req, res) => {
@@ -22,7 +22,7 @@ app.post('/', (req, res) => {
 
     
 
-    const list_id = '206282ea08';
+    const list_id = 'Your List ID';
 
 
     async function run() {
@@ -57,8 +57,3 @@ app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
 
-//API Key
-//8f2c0073d6c7f8044336f94aaa42a426-us8
-
-//List ID
-//206282ea08
