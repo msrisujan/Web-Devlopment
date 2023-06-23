@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const date = require(__dirname + '/date.js');
+const notifier = require('node-notifier');
 const app = express();
 
 const items =["Buy Food", "Cook Food", "Eat Food"];
@@ -11,6 +12,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 app.get('/', (req, res) => {
+
+    notifier.notify({
+        title: 'Welcome to your To-Do List!',
+        message: 'Welcome to your To-Do List!',
+        sound: true
+    });
 
     const day = date.getDate();
 
